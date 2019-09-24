@@ -13,8 +13,8 @@ printf "\e[1;92m | |/ /  _  |  _   _ \ / _ \  __/ _  | \e[0m\e[1;77m"
 printf "\e[1;92m |   <| (_| | | | | | |  __/ | | (_| | \e[0m\e[1;77m" 
 printf "\e[1;92m |_|\_\ __ _|_| |_| |_|\___|_|  \__ _| \e[0m\e[1;77m" 
 printf "\e[1;92m             im hacker                 \e[0m\e[1;77m" 
-printf "\e[1;92m    [  Script Hack Kamera Depan  ]        
-printf "\e[1;77m v1.0 coded by github.com/wisnusaputra123/selfie
+printf "\e[1;92m    [  Script Hack Kamera Depan  ]"        
+printf "\e[1;77m v1.0 coded by github.com/wisnusaputra123/selfie"
 
 printf "\n"
 
