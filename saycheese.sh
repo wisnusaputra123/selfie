@@ -6,7 +6,6 @@
 trap 'printf "\n";stop' 2
 
 banner() {
-
                                   
 printf "\e[1;92m | |  ____ _ _ __ ___   ___ _ __ __ _  \e[0m\e[1;77m"
 printf "\e[1;92m | |/ /  _  |  _   _ \ / _ \  __/ _  | \e[0m\e[1;77m"
